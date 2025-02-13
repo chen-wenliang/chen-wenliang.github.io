@@ -58,7 +58,15 @@ Email: chenwenliang (at) gmail or wlchen (at) suda.edu.cn<br><br>
 <h1>Data and Code</h1>
 <h2>Data</h2>
 <ul>
-  <li>To add</li>	
+  <li>To add</li>
+	<div id="github-stars"></div>
+<script>
+  fetch('https://api.github.com/repos/Spico197/Mirror')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('github-stars').innerText = 'Mirror: https://github.com/Spico197/Mirror/ ' + data.stargazers_count + ' Stars';
+    });
+</script>
 </ul>
 <h2>Code</h2>
 <ul>
