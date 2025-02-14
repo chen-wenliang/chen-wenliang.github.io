@@ -81,14 +81,17 @@ Email: chenwenliang (at) gmail or wlchen (at) suda.edu.cn<br><br>
 </ul>
 <h2>Tool</h2>
 <ul>
-<li><div id="github-stars"></div>
+
+<li><a href='https://github.com/Spico197/Mirror/'>Mirror:</a>: 通用信息抽取框架
+<div id="github-starsMirror"></div>
 <script>
   fetch('https://api.github.com/repos/Spico197/Mirror')
     .then(response => response.json())
     .then(data => {
-      document.getElementById('github-stars').innerText = 'Mirror: '+data.stargazers_count + ' Stars, https://github.com/Spico197/Mirror/ ' ;
+      document.getElementById('github-starsMirror').innerText =' Github: '+ data.stargazers_count + ' Stars ' ;
     });
-</script></li>
+</script>
+</li>
 </ul>
 	  
 <!--
